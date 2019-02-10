@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Pacifico|Ubuntu|Anton|Acm|Gabriela');
+#main {
+    padding: 0;
+}
+
+/* Navigation Bar */
+
+.navbarContainer {
+    padding: 0 5%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: steelblue;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: all 1s;
+}
+
+#logoContainer {
+    grid-column: 1/5;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#logoContainer>img {
+    grid-column: 1;
+    margin-top: 7.5px;
+    cursor: pointer;
+}
+
+#logoContainer>h3 {
+    grid-column: 2/7;
+    text-align: left;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 0.5em;
+    font-family: 'Pacifico', cursive;
+}
+
+#navbar {
+    grid-column: 5/11;
+    text-align: right;
+    list-style-type: none;
+}
+
+#navbar>li {
+    display: inline-block;
+    margin-left: 5px;
+    color: white;
+    font-size: 14px;
+    padding: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 3px solid skyblue;
+}
+
+/* Front Page */
+
+#frontPageContainer {
+    height: 100vh;
+}
+
+#opacContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(white, lightgrey);
+    opacity: 0.4;
+}
+
+#frontPageContainer>#opacContainer>img {
+    width: 100%;
+    margin-top: 3.5rem;
+    height: inherit;
+}
+
+#frontPageHeadingContainer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#largeHeading {
+    height: inherit;
+    grid-column: 3;
+    background-color: rgba(0, 150, 200, 0.4);
+    padding-left: 1em;
+    margin: 3.5em 0 0 0;
+}
+
+#heading {
+    color: white;
+    padding-top: 1.5em;
+    font-size: 6em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-family: 'Anton', sans-serif;
+}
+
+/* Services Page */
+
+#servicesContainer {
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+#bgContainer {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+}
+
+#bgContainer>img {
+    opacity: 0.1;
+    margin: 7.2em;
+    width: 70%;
+}
+
+#packages {
+    padding-top: 5.5em;
+    width: 100%;
+    height: inherit;
+}
+
+.card {
+    margin: 0 0.5em 2em 0.5em;
+    box-shadow: 7px 7px 12px lightgray;
+    width: 18rem;
+}
+
+.card-body {
+    height: 3.25em;
+}
+
+.card-title {
+    margin-top: -7px;
+    color: steelblue;
+    font-family: Anton;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#packages>h3 {
+    text-align: center;
+    margin: auto;
+    color: darkgray;
+    font-family: Gabriela, sans-serif;
+    padding-bottom: 10px;
+    border-bottom: 2px solid darkgray;
+    margin-bottom: 1em;
+}
+
+#tourism {
+    width: 40%;
+}
+
+#tickets {
+    width: 8%;
+}
+
+/* About Us Page */
+
+#aboutUsContainer {
+    height: 100vh;
+    background-color: linen;
+    padding: 8em 20px 0 20px;
+    background-image: url("./Assets/brand/cwtA.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+}
+
+#aboutUsContainer>h3 {
+    text-align: center;
+    margin: auto;
+    width: 15%;
+    color: lightcoral;
+    font-family: Pacifico, sans-serif;
+    padding-bottom: 7.5px;
+    border-bottom: 2px solid lightcoral;
+}
+
+#aboutUsContainer>p {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    color: lightcoral;
+    font-family: Pacifico, sans-serif;
+    margin-top: 2em;
+    line-height: 35px;
+}
+
+/* Contact Us Page */
+
+#contactUsContainer {
+    height: 100vh;
+    background-color: steelblue;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+#contactUs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/6;
+    grid-row: 1/3;
+    padding: 9.75em 20px 0 20px;
+    text-align: center;
+    grid-gap: 18px;
+}
+
+#contactUs>h3 {
+    grid-column: 1/3;
+    margin: auto;
+    width: 30%;
+    color: white;
+    font-family: Pacifico, sans-serif;
+    padding-bottom: 7.5px;
+    border-bottom: 2px solid white;
+}
+
+#address {
+    grid-column: 1/3;
+    margin-top: 1em;
+}
+
+.symbolMatter {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+#telephone {
+    grid-column: 1;
+}
+
+#fax {
+    grid-column: 2;
+}
+
+#mobile {
+    grid-column: 1;
+}
+
+#email {
+    grid-column: 2;
+}
+
+#contactFormContainer {
+    grid-column: 6/11;
+    grid-row: 1/4;
+    padding: 6em 20px 0 20px;
+    text-align: center;
+}
+
+#contactFormContainer>#talk {
+    margin: auto;
+    width: 30%;
+    color: white;
+    font-family: Pacifico, sans-serif;
+    padding-bottom: 7.5px;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+}
+
+#needHelpHead {
+    color: white;
+    font-family: Acme, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#ampersand {
+    color: white;
+    margin: 0;
+}
+
+#contactFormContainer>p {
+    margin: 0;
+}
+
+#contactForm {
+    padding-top: 0.5em;
+}
+
+.form-row {
+    margin-top: 20px;
+}
+
+#submitBtn {
+    margin-top: 20px;
+    color: steelblue;
+    width: 6em;
+}
+
+#footer {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+    grid-column: 1/11;
+}
+
+#footer>p {
+    font-family: Gabriela;
+    font-size: 16px;
+    color: steelblue;
+    margin: 0;
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    /* Navigation Bar */
+    .navbarContainer {
+        text-align: center;
+        height: 120px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #logoContainer {
+        grid-column: 1;
+        grid-row: 1;
+        height: 60px;
+    }
+    #logoContainer>img {
+        margin-left: 11.5em;
+    }
+    #logoContainer>h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    #navbar {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    /* Front Page */
+    #largeHeading {
+        margin-top: 3.5em;
+        height: inherit;
+    }
+    #heading {
+        margin-top: 25vh;
+        font-size: 4em;
+    }
+    /* Services */
+    .card {
+        width: 13rem;
+    }
+    .card-body {
+        height: 4.5em;
+    }
+    #bgContainer>img {
+        margin-top: 43em;
+    }
+    #packages {
+        padding-top: 10em;
+    }
+    #tourism {
+        width: 60%;
+    }
+    #tickets {
+        width: 15%;
+    }
+    /* About Us */
+    #aboutUsContainer {
+        background-position-x: 6em;
+    }
+    #aboutUsContainer>h3 {
+        width: 25%;
+        margin-top: 2em;
+    }
+    #aboutUsContainer>p {
+        width: 81%;
+    }
+    /* Contact Us */
+    #footer>p {
+        width: 100%;
+        text-align: center;
+    }
+    #contactUs>h3 {
+        width: 50%;
+    }
+    #contactFormContainer>#talk {
+        width: 50%;
+    }
+    #telephone {
+        grid-column: 1/3;
+    }
+    #fax {
+        grid-column: 1/3;
+    }
+    #mobile {
+        grid-column: 1/3;
+    }
+    #email {
+        grid-column: 1/3;
+    }
+    #contactFormContainer {
+        padding-top: 12.5em;
+    }
+}
+
+/* iPad Pro Portrait */
+
+@media (width: 1024px) and (height: 1366px) {
+    /* Navigation Bar */
+    .navbarContainer {
+        text-align: center;
+        height: 120px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #logoContainer {
+        grid-column: 1;
+        grid-row: 1;
+        height: 60px;
+    }
+    #logoContainer>img {
+        margin-left: 19em;
+    }
+    #logoContainer>h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    #navbar {
+        text-align: center;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #heading {
+        margin-top: 25vh;
+        font-size: 5.5em;
+    }
+    /* Services */
+    .card {
+        width: 17rem;
+    }
+    .card-body {
+        height: 4.5em;
+    }
+    #bgContainer>img {
+        margin-top: 57em;
+    }
+    #packages {
+        padding-top: 10em;
+    }
+    #tourism {
+        width: 60%;
+        font-size: 3em;
+    }
+    #tickets {
+        font-size: 3em;
+        width: 20%;
+        padding-top: 1em;
+    }
+    /* About Us */
+    #aboutUsContainer {
+        background-position-x: 6em;
+    }
+    #aboutUsContainer>h3 {
+        width: 25%;
+        margin-top: 2em;
+    }
+    #aboutUsContainer>p {
+        width: 81%;
+    }
+    /* Contact Us */
+    #footer>p {
+        width: 100%;
+        text-align: center;
+    }
+    #contactUsContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr)
+    }
+    #contactUs>h3 {
+        width: 50%;
+    }
+    #contactFormContainer>#talk {
+        width: 50%;
+    }
+    #telephone {
+        grid-column: 1;
+    }
+    #fax {
+        grid-column: 2;
+    }
+    #mobile {
+        grid-column: 1;
+    }
+    #email {
+        grid-column: 2;
+    }
+    #contactUs {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #contactFormContainer {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 3.5em;
+    }
+}
+
+/* iPad Pro Landscape */
+
+@media (width: 1366px) and (height: 1024px) {
+    /* Navigation Bar */
+    #heading {
+        margin-top: 13vh;
+    }
+    /* Services */
+    .card {
+        width: 19rem;
+    }
+    .card-body {
+        height: 3.25em;
+    }
+    #bgContainer>img {
+        margin-top: 27em;
+    }
+    #packages {
+        padding-top: 5.5em;
+    }
+    #tourism {
+        width: 40%;
+        font-size: 2.5em;
+    }
+    #tickets {
+        font-size: 2.5em;
+        width: 15%;
+        padding-top: 0.3em;
+    }
+    /* About Us */
+    #aboutUsContainer>h3 {
+        width: 20%;
+        font-size: 3em;
+    }
+    #aboutUsContainer>p {
+        width: 75%;
+        font-size: 1.75em;
+        line-height: 50px;
+    }
+    /* Contact Us */
+    #footer>p {
+        width: 100%;
+        text-align: center;
+    }
+    #contactUsContainer {
+        padding-top: 8em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #contactUs>h3 {
+        width: 30%;
+    }
+    #contactFormContainer>#talk {
+        width: 50%;
+    }
+    #telephone {
+        grid-column: 1;
+    }
+    #fax {
+        grid-column: 2;
+    }
+    #mobile {
+        grid-column: 1;
+    }
+    #email {
+        grid-column: 2;
+    }
+    #contactUs {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 6.5em;
+    }
+    #contactFormContainer {
+        grid-column: 2;
+        padding-top: 4.5em;
+    }
+}
+
+/* Small devices (portrait phones, 575px and low) */
+
+@media (max-width: 575px) {
+    /* Navigation Bar */
+    .navbarContainer {
+        height: 102px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #logoContainer {
+        grid-column: 1;
+        grid-row: 1;
+        height: 60px;
+    }
+    #logoContainer>img {
+        margin-left: 2.25em;
+    }
+    #logoContainer>h3 {
+        font-size: 1.25em;
+        padding-left: 0.2em;
+        padding-top: 0.7em;
+    }
+    #navbar {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+        padding: 0;
+        margin-top: 4.25px;
+    }
+    #navbar>li {
+        margin-left: 0;
+        font-size: 10px;
+        padding: 10px;
+    }
+    /* Front Page */
+    #frontPageContainer>#opacContainer>img {
+        height: inherit;
+    }
+    #heading {
+        padding-right: 0.5em;
+        font-size: 4em;
+        padding-top: 3.25em;
+    }
+    /* Services Page */
+    #servicesContainer {
+        height: 300vh;
+        background-color: white;
+        text-align: center;
+    }
+    #bgContainer>img {
+        margin: 105em 0 0 0;
+        width: 90%;
+    }
+    #packages {
+        padding-top: 7em;
+        width: 100%;
+        height: inherit;
+    }
+    .card {
+        margin: 0 0.5em 2em 0.5em;
+        box-shadow: 7px 7px 12px lightgray;
+        width: 15rem;
+    }
+    .card-body {
+        height: 3.25em;
+    }
+    .card-title {
+        margin-top: -7px;
+        color: steelblue;
+        font-family: Anton;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #packages>h3 {
+        text-align: center;
+        margin: auto;
+        color: darkgray;
+        font-family: Gabriela, sans-serif;
+        padding-bottom: 10px;
+        border-bottom: 2px solid darkgray;
+        margin-bottom: 1em;
+    }
+    #tourism {
+        width: 70%;
+        font-size: 18px;
+    }
+    #tickets {
+        font-size: 18px;
+        width: 30%;
+    }
+    /* About Us Page */
+    #aboutUsContainer {
+        padding-top: 7em;
+    }
+    #aboutUsContainer>h3 {
+        width: 40%;
+        font-size: 1.5em;
+    }
+    #aboutUsContainer>p {
+        width: 95%;
+        line-height: 2em;
+        margin-top: 0.5em;
+        font-size: 0.79em;
+    }
+    /* Contact Us Page */
+    #contactUsContainer {
+        height: 100vh;
+        background-color: steelblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #contactUs {
+        padding-top: 7em;
+        grid-column: 1;
+        grid-row: 1;
+        grid-gap: 0;
+    }
+    #contactUs>h3 {
+        width: 40%;
+        font-size: 1.25em;
+        padding-bottom: 7.5px;
+    }
+    #address {
+        margin-top: 0.5em;
+    }
+    #address>img, #telephone>img, #fax>img, #mobile>img, #email>img {
+        width: 35px;
+        height: 35px;
+    }
+    .symbolMatter {
+        font-size: 0.65em;
+        margin-top: 3px;
+        line-height: 20px;
+    }
+    #contactFormContainer {
+        grid-column: 1;
+        grid-row: 2;
+        padding-top: 0em;
+    }
+    #contactFormContainer>#talk {
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+    #needHelpHead {
+        font-size: 0.75em;
+    }
+    #ampersand {
+        display: none;
+    }
+    #contactFormContainer>p {
+        margin: 0;
+    }
+    #contactForm {
+        padding-top: 0.5em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .form-row {
+        margin-top: 0;
+    }
+    .input-group-prepend>input, .input-group-prepend>textarea {
+        font-size: 10px;
+    }
+    .query {
+        margin-top: 2px;
+        grid-column: 1/3;
+    }
+    .name {
+        margin-left: -2em;
+    }
+    .userEmail {
+        margin-left: -3.5em;
+    }
+    #submitBtn {
+        grid-column: 1/2;
+        grid-row: 3;
+        margin-top: 2px;
+        margin-left: 7em;
+        height: 2em;
+        padding: 0;
+    }
+    #footer {
+        display: none;
+        padding-left: 4%;
+        padding-right: 4%;
+        width: 100%;
+        grid-column: 1/11;
+    }
+    #footer>p {
+        display: none;
+        font-family: Gabriela;
+        font-size: 16px;
+        color: steelblue;
+        margin: 0;
+    }
+}
+
+/* Small devices (landscape phones) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Navigation Bar */
+    .navbarContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #logoContainer>img {
+        grid-column: 1;
+        margin-top: 7.5px;
+    }
+    #logoContainer>h3 {
+        display: none;
+    }
+    #navbar {
+        padding-top: 0.7em;
+    }
+    #navbar>li {
+        font-size: 12px;
+        padding: 13.5px;
+    }
+    /* Front Page */
+    #frontPageContainer>#opacContainer>img {
+        height: 105.5vh;
+    }
+    #frontPageHeadingContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #largeHeading {
+        height: inherit;
+        grid-column: 3;
+    }
+    #heading {
+        padding-top: 2.25em;
+        font-size: 3em;
+    }
+    /* Services Page */
+    #servicesContainer {
+        height: 100vh;
+        background-color: white;
+        text-align: center;
+    }
+    #bgContainer {
+        position: absolute;
+        height: inherit;
+        width: 100%;
+    }
+    #bgContainer>img {
+        margin: 4.5em;
+        width: 75%;
+    }
+    #packages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        padding-top: 4.25em;
+    }
+    .cardGrid {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .card {
+        width: 7rem;
+        margin-bottom: 1em;
+    }
+    .card-body {
+        height: 0;
+    }
+    .card-title {
+        margin-top: -14px;
+        font-size: 0.75em;
+    }
+    #tourism {
+        grid-column: 1;
+        width: 80%;
+        font-size: 1em;
+    }
+    .cardTickets {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    #tickets {
+        grid-column: 2;
+        font-size: 1em;
+        width: 30%;
+    }
+    /* About Us Page */
+    #aboutUsContainer {
+        padding-top: 4.5em;
+    }
+    #aboutUsContainer>h3 {
+        width: 20%;
+        font-size: 1.5em;
+    }
+    #aboutUsContainer>p {
+        width: 90%;
+        margin-top: 0.5em;
+        font-size: 0.72em;
+        line-height: 2em;
+    }
+    /* Contact Us Page */
+    #contactUs {
+        grid-gap: 0px;
+        padding: 4.25em 12px 0 12px;
+    }
+    #contactUs>h3 {
+        font-size: 1.25em;
+        width: 40%;
+        margin-bottom: 1em;
+    }
+    #address {
+        margin-top: 0;
+    }
+    #address>img, #telephone>img, #fax>img, #mobile>img, #email>img {
+        width: 30px;
+        height: 30px;
+    }
+    .symbolMatter {
+        font-size: 0.72em;
+        line-height: 25px;
+        margin-top: 0;
+    }
+    #contactFormContainer {
+        padding: 4.25em 5px 0 5px;
+    }
+    #contactFormContainer>#talk {
+        font-size: 1.25em;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    #needHelpHead {
+        font-size: 0.8em;
+        margin-bottom: 0;
+    }
+    #contactFormContainer>p {
+        font-size: 0.6em;
+        margin: 0;
+    }
+    #contactForm {
+        padding-top: 0.5em;
+    }
+    .form-row {
+        margin-top: 2px;
+    }
+    .input-group-prepend>input, .input-group-prepend>textarea {
+        font-size: 10px;
+    }
+    #submitBtn {
+        margin-top: 7px;
+        color: steelblue;
+        font-size: 0.75em;
+    }
+    #footer {
+        display: none;
+    }
+}
